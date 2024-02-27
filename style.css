@@ -6,8 +6,8 @@
 --azul-escuro: #03045e;
 --cinza-escuro: #0d1b2a;
 --creme: #e0ddcf;
---font-texto: "Roboto Mono", monospace;
---font-titulo: "Kode Mono", monospace;
+--font-texto: "Roboto Mono", sans-serif;
+--font-titulo: "Kode Mono", sans-serif;
 
 }
 
