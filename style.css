@@ -3,8 +3,8 @@
 
 :root {
 --azul-real: #001d3d;
---azul-escuro #03045e;
---cinza-escuro #0d1b2a;
+--azul-escuro: #03045e;
+--cinza-escuro: #0d1b2a;
 --creme: #e0ddcf;
 --font-titulo: "Kode Mono", monospace;
 --font-texto: "Roboto Mono", monospace;
