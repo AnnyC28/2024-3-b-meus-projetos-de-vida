@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@478&family=Roboto+Mono:wght@576&display=swap');
+
+:root {
+--azul-real: #001d3d;
+--azul-escuro #03045e;
+--cinza-escuro #0d1b2a;
+--creme: #e0ddcf;
+--font-titulo: "Kode Mono", monospace;
+--font-texto: "Roboto Mono", monospace;
+}
+
+body {
+    background-color: var(--azul-escuro);
+}
+    
