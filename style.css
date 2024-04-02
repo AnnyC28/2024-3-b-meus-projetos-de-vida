@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@478&family=Roboto+Mono:wght@576&display=swap');
 
 :root{
---azul-real: #001d3d;
---azul-escuro: #03045e;
+--azul-real: #2c82dd;
+--azul-escuro: #3b3ee6;
 --cinza-escuro: #0d1b2a;
---creme: #e0ddcf;
+--creme: #76babd;
 --font-texto: "Roboto Mono", sans-serif;
 --font-titulo: "Kode Mono", sans-serif;
 
@@ -25,7 +25,7 @@ body {
         max-width: 1200px;
         width: 100%;
         margin: 0 auto;
-    }
+}
 
 .titulo.principal{
     text-align: left;
@@ -38,17 +38,17 @@ color:var(--creme);
 }
 
 .botao{
-    font-family: var(--font-texto);
-    background-color: var(--azul-escuro);
-    color: var(--creme);
+font-family: var(--font-texto);
+background-color: var(--azul-escuro);
+color: var(--creme);
 display: flex;
 justify-content: center;
 align-items: center;
 padding: 1em;
 width: 100%;
-border-bottom: 4px var(--creme);
-border-left: var(--azul-escuro);
-border-right: var(--cinza-escuro);
+border-bottom: 4px solid var(--creme);
+border-left: 4px solid var(--azul-real);
+border-right: 4px solid var(--cinza-escuro);
 border-top: none;
 }
 
@@ -66,7 +66,7 @@ border-top: none;
 
 .botao.ativo{
     background-color: var(--cinza-escuro);
-    border-color: 4px solid  blue;
+    border-color: 4px solid  rgb(121, 121, 240);
 }
 
 .abas-textos{
@@ -94,8 +94,7 @@ border-top: none;
     text-transform: uppercase;
 }
 
- @media screen and(min-width: 760px) {
-   
+ @media screen and(min-width: 768px) {
     .botoes{
         display: flex;
     }
