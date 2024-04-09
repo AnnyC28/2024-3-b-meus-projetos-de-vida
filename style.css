@@ -17,7 +17,7 @@ body {
     font-family: var(--font-texto);
 }
 
- .conteudo-principal{
+ .conteudo-principal {
         display:flex;
         flex-direction: column;
         justify-content: center;
@@ -30,15 +30,16 @@ body {
 .titulo.principal{
     text-align: left;
     width: 100%;
-    font-size: 36px;
+    font-size: 32px;
 }
 
-.titulo.principal span{
+.titulo.principal span {
 color:var(--creme);
 }
 
-.botao{
+.botao {
 font-family: var(--font-texto);
+font-size: 18px;
 background-color: var(--azul-escuro);
 color: var(--creme);
 display: flex;
@@ -66,11 +67,11 @@ border-top: none;
 
 .botao.ativo{
     background-color: var(--cinza-escuro);
-    border-color: 4px solid  rgb(121, 121, 240);
+    border-color: 4px solid rgb(121, 121, 240);
 }
 
 .abas-textos{
-    background-color: var(--azul-escuro);
+    background-color: var(--azul-real);
     padding: 40px;
     border-radius: 0 0 40px 40px;
 }
@@ -94,15 +95,15 @@ border-top: none;
     text-transform: uppercase;
 }
 
- @media screen and(min-width: 768px) {
+ @media screen and (min-width: 768px) {
     .botoes{
         display: flex;
     }
   
     .botao:first-child{
         border-radius: 40px 0 0 0;
- }
+    }
  .botao:last-child{
-    border-radius: 0 40px 0 0;
- }
+        border-radius: 0 40px 0 0;
+    }
 }
