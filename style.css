@@ -95,6 +95,30 @@ border-top: none;
     text-transform: uppercase;
 }
 
+.contador{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.contador-digito-numero{
+    font-size: 65px;
+    margin: 0;
+}
+
+.contador-digito-texto{
+    color: var(--creme);
+    font-size: 20px;
+    margin: 0;
+}
+
+
  @media screen and (min-width: 768px) {
     .botoes{
         display: flex;
