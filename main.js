@@ -11,9 +11,19 @@ const tempoObjetivo04 = new Date("2025-01-25T00:00:00");
 
 const tempos = [tempoObjetivo01, tempoObjetivo02, tempoObjetivo03, tempoObjetivo04];
 
-for(let i= 0; i<tempos.length; i++){
+function atualizaCronometro() {
+  for(let i= 0; i<tempos.length; i++){
     contadores[i].textContent = calculaTempo(tempos[i])
+  }
 }
+
+function comecaCronometro() {
+atualizaCronometro();
+setInterval(atualizaCronometro, 1000);
+}
+
+//comecaCronometro ();
+
 
 for(let i= 0; i<botoes.length; i++){
 
@@ -44,5 +54,9 @@ function calculaTempo (tempoObjetivo) {
     minutos %= 60;
     horas %=24;
 
+    if(tempoFinal > 0){
     return dias + "Dias" + horas + "Horas" + minutos + "Minutos" + segundos + "Segundos";
+    }else {
+      return "Prazo finalizado"
+    }
 }
