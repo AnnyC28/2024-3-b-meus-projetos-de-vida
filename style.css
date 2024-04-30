@@ -48,8 +48,8 @@ align-items: center;
 padding: 1em;
 width: 100%;
 border-bottom: 4px solid var(--creme);
-border-left: 4px solid var(--azul-real);
-border-right: 4px solid var(--cinza-escuro);
+border-left: 2px solid var(--azul-real);
+border-right: 2px solid var(--cinza-escuro);
 border-top: none;
 }
 
