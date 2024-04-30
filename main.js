@@ -12,8 +12,18 @@ const tempoObjetivo04 = new Date("2025-01-25T00:00:00");
 const tempos = [tempoObjetivo01, tempoObjetivo02, tempoObjetivo03, tempoObjetivo04];
 
 function atualizaCronometro() {
-  for(let i= 0; i<tempos.length; i++){
-    contadores[i].textContent = calculaTempo(tempos[i])
+
+  for (let i = 0; i<contadores.lenght; i++) {
+   document.getElementById("dias"+i).textContent
+    = calculaTempo(tempos[i])[0];
+   document.getElementById("horas"+i).textContent
+    = calculaTempo(tempos[i])[1];
+   document.getElementById("mins"+i).textContent
+    = calculaTempo(tempos[i])[2];
+   document.getElementById("segs"+i).textContent
+    = calculaTempo(tempos[i])[3];
+  
+    
   }
 }
 
@@ -22,7 +32,7 @@ atualizaCronometro();
 setInterval(atualizaCronometro, 1000);
 }
 
-//comecaCronometro ();
+comecaCronometro ();
 
 
 for(let i= 0; i<botoes.length; i++){
